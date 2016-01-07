@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>pizza</title>
+    <link rel="stylesheet" href="css/normalize.css" charset="utf-8">
+    <link rel="stylesheet" href="css/master.css" charset="utf-8">
+    <script src="main.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jstitle">
+        <h2 id="jstitle-h2">Javascript Calculator</h2>
+      </div>
+      <div id="buffer-zone"></div>
+      <input id="input1" type="text" placeholder="Enter values" size="53"> <br>
+      <button id="button1" onclick="enterValues(1)" value="1">1</button>
+      <button id="button2" onclick="enterValues(2)" value="2">2</button>
+      <button id="button3" onclick="enterValues(3)" value="3">3</button>
+      <button id="button4" onclick="enterValues('&#40')" value="(">(</button> <br>
+      <button id="button1" onclick="enterValues(4)" value="4">4</button>
+      <button id="button2" onclick="enterValues(5)" value="5">5</button>
+      <button id="button3" onclick="enterValues(6)" value="6">6</button>
+      <button id="button4" onclick="enterValues('&#41')" value=")">)</button> <br>
+      <button id="button1" onclick="enterValues(7)" value="7">7</button>
+      <button id="button2" onclick="enterValues(8)" value="8">8</button>
+      <button id="button3" onclick="enterValues(9)" value="9">9</button>
+      <button id="button4" onclick="enterValues('.')" value=".">.</button> <br>
+      <button id="button1" onclick="enterValues(0)" value="0">0</button>
+      <button id="button2" onclick="enterOps(' + ' )">+</button>
+      <button id="button3" onclick="enterOps(' - ')">-</button>
+      <button id="button4" onclick="">*%*</button> <br>
+      <button id="button1" onclick="enterOps(' * ')">x</button>
+      <button id="button2" onclick="enterOps(' / ')">&divide</button>
+      <button id="button3" onclick="solveVals()">=</button>
+      <button id="button4" onclick="">*clear*</button> <br>
+      <button id="resetButton" onclick="reset()">reset</button> <br>
+      <div id="displayBox">
+        <p id="displayBoxP">0</p>
+      </div>
+      <div class="log">
+        <p id="logTitle"><span>Log:<span></p>
+        <div id="logText">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
